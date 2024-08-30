@@ -2,10 +2,11 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./src/*.html",
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -67,29 +68,29 @@ module.exports = {
           to: { height: "0" },
         },
         ping: {
-          '75%, 100%': {
-            transform: 'scale(2)',
-            opacity: '0',
+          "75%, 100%": {
+            transform: "scale(2)",
+            opacity: "0",
           },
         },
         "ping-in": {
-          '0%': {
-            transform: 'translateY(50%)',
-            opacity: '0',
+          "0%": {
+            transform: "translateY(50%)",
+            opacity: "0",
           },
-          '100%': {
-            transform: 'translateY(0)',
-            opacity: '1',
+          "100%": {
+            transform: "translateY(0)",
+            opacity: "1",
           },
         },
         "ping-out": {
-          '0%': {
-            transform: 'translateY(0)',
-            opacity: '1',
+          "0%": {
+            transform: "translateY(0)",
+            opacity: "1",
           },
-          '100%': {
-            transform: 'translateY(-50%)',
-            opacity: '0',
+          "100%": {
+            transform: "translateY(-50%)",
+            opacity: "0",
           },
         },
       },
@@ -103,4 +104,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
